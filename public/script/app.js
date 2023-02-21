@@ -4,7 +4,7 @@ console.log("Clint side script")
 document.querySelector("form").addEventListener("submit",(evt) =>{
     evt.preventDefault()
     document.querySelector('h5').innerHTML = "Loading..."
-    url = "http://localhost:3000/weather?address=" + document.querySelector("input").value
+    url = "/weather?address=" + document.querySelector("input").value
     fetch(url).then((response) => {
         response.json().then((data)=>{
             if(data.error){
