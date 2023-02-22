@@ -1,5 +1,3 @@
-console.log("Clint side script")
-// url = "http://localhost:3000/weather?address=Pune"
 
 document.querySelector("form").addEventListener("submit",(evt) =>{
     evt.preventDefault()
